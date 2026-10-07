@@ -1,0 +1,6 @@
+numpy
+jax
+quimb
+qiskit
+qiskit-qasm3-import
+jupyter

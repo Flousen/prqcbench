@@ -63,12 +63,16 @@ qc.measure_all()
 2. maximise $|\langle 0^n|P(\theta)^\dagger R|0^n\rangle|^2$ with JAX (5,000 L-BFGS-B iterations, then up to 10,000 Adam iterations);
 3. transpile to `u` + `cz` and export as OpenQASM 3.
 
-Optimisation uses random initial gates, so a new run will not reproduce the published circuits exactly. It should reach a similar peak probability.
+Optimisation uses random initial gates, so a new run will not reproduce the published circuits exactly. It should reach a similar peak probability. Note that the circuits provided (partially) reuse the random half R of the largest, *q20d50*-circuit.
 
 ```bash
 pip install -r requirements.txt
 jupyter notebook generate_prqc.ipynb
 ```
+
+## Protocol
+
+<p align="center"><img src="protocol.svg" alt="PRQC benchmark protocol flowchart" width="360"></p>
 
 ## References
 
